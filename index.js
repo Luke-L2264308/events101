@@ -25,3 +25,19 @@ function lovelyButtonAttacher(){
     const button = document.querySelector('#button1');
     button.addEventListener('click',lovelyToggle);
 }
+
+function concatAttacher(){
+    const in1 = document.querySelector('#in1');
+    const in2 = document.querySelector('#in2');
+    in1.addEventListener('change', outputResult);
+    in2.addEventListener('change', outputResult);
+
+
+}
+function outputResult(){
+    const in1 = document.querySelector('#in1');
+    const in2 = document.querySelector('#in2');
+    
+    const out = document.querySelector('#out1');
+    out.textContent = in1.value + in2.value
+}
