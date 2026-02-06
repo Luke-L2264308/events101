@@ -20,3 +20,8 @@ function lovelyParaAttacher(){
     paraElement.addEventListener('click', lovelyToggle);
 
 }
+
+function lovelyButtonAttacher(){
+    const button = document.querySelector('#button1');
+    button.addEventListener('click',lovelyToggle);
+}
