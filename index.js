@@ -39,5 +39,13 @@ function outputResult(){
     const in2 = document.querySelector('#in2');
     
     const out = document.querySelector('#out1');
-    out.textContent = in1.value + in2.value
+    out.textContent = in1.value + in2.value;
 }
+
+
+function snitchAttacher(){
+    const mouseWatcher = document.querySelector('#mousewatcher');
+    mouseWatcher.addEventListener('mouseover',snitchUpdater);
+    mouseWatcher.addEventListener('mouseout', snitchUpdater);
+}
+
